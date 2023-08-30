@@ -1,5 +1,4 @@
-Title: My First Review
-Date: 2010-12-03 10:20
-Category: Review
+Title: Growing up in a startup dev team
+Date: 2013-08-30 21:00
 
-Following is a review of my favorite mechanical keyboard.
+TBA
