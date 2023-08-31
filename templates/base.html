@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ DEFAULT_LANG }}" itemscope itemtype="http://schema.org/Person">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ AUTHOR_DESCRIPTION }}">
+  <meta name="author" content="{{ AUTHOR }}">
+
+  <link rel="shortcut icon" href="{{ FAVICON }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/milligram.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/static/css/main.css" type="text/css">
+
+  <title>{% block title %} {{ SITENAME }} {% endblock %}</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Custom navigation bar -->
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="{{ SITEURL }}"><h3>{{ SITENAME }}</h3></a>
+          <h5>By {{ AUTHOR }}</h5>
+        </li>
+        <li>
+          {% if SITEDESCRIPTION  %}
+            <em><h6>{{ SITEDESCRIPTION }}</h6></em>
+          {% endif  %}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sidebar -->
+    <sidebar>
+      <!-- Sidebar content -->
+    </sidebar>
+
+    <maincontent>
+      {% block content %}
+      {% endblock %}
+    </maincontent>
+
+    <!-- Analytics -->
+    {% if GOOGLE_ANALYTICS %}
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS }}']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    {% endif %}
+  </div>
+</body>
+</html>
