@@ -1,5 +1,6 @@
 AUTHOR = 'Niall Curtis'
-SITENAME = 'My Work & Musings'
+AUTHOR_INFO = 'Software Dev @ Cardiff'
+SITENAME = '🧑🏼‍💻 My Work, Interests & Musings'
 SITEURL = ''
 
 PATH = 'content'
@@ -16,10 +17,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('🐦 Twitter', 'https://x.com/therealxniall'),
+         ('🗃️ LinkedIn', 'https://www.linkedin.com/in/niallcurtis/'),
+         ('💻 GitHub', 'https://github.com/'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),

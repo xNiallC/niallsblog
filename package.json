@@ -4,7 +4,8 @@
   "description": "My Blog",
   "main": "index.js",
   "scripts": {
-    "start": "python ./devserver.py"
+    "start": "python ./devserver.py",
+    "gen:content": "pelican content"
   },
   "repository": {
     "type": "git",

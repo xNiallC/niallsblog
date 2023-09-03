@@ -46,7 +46,7 @@
             <div>
                 <li>
                     <a href="{{ SITEURL }}"><h3>{{ SITENAME }}</h3></a>
-                    <h5>By {{ AUTHOR }}</h5>
+                    <h5>By {{ AUTHOR }} - {{ AUTHOR_INFO }} </h5>
                 </li>
                 <li>
                     {% if SITEDESCRIPTION  %}
@@ -59,7 +59,7 @@
 
   <!-- Sidebar -->
     <sidebar>
-        <ul class="static-item">
+        <!-- <ul class="static-item">
         {% for title, link in MENUITEMS %}
                 <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
@@ -69,39 +69,17 @@
                 <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
         {% endif %}
-        </ul>        
-
-        <ul>
-        {% if DISPLAY_CATEGORIES_ON_MENU and categories %}
-                <div class="cat-border">
-                <li style="color: #F2F1EF; background-color: #6C7A89;">Categories</li>
-                {% for cat, null in categories %}
-                    <li{% if cat == category %}{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                {% endfor %}
-                </div>
-        {% endif %}
-        </ul>
+        </ul>         -->
 
         {% if LINKS %}
-            <h2><br/>BLOGROLLS</h2>
+            <h2><br/>My Links</h2>
             <ul>
                 {% for name, link in LINKS %}
                     <li><a href="{{ link }}">{{ name }}</a></li>
                 {% endfor %}
             </ul> 
         {% endif %}
-   
-        <p> 
-        {% if SOCIAL %}
-            {% for name, link in SOCIAL %}
-                <span>
-                    <a href="{{ link }}" target="_blank">
-                        <img class="social-icons-m" src="{{ SITEURL }}/theme/images/icons/{{ name|lower }}.png">
-                    </a>
-                </span>
-            {% endfor %}
-        {% endif %}
-        </p>
+
         <p>
         {% if FEED_ALL_ATOM %}
             <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate">
@@ -113,6 +91,10 @@
             <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate">
                 <img class="social-icons-m" src="{{ SITEURL }}/theme/images/icons/rss.png"></a>
         {% endif %}
+        </p>
+
+        <p>
+            Created using <a href="https://getpelican.com/">Pelican</a>
         </p>
     </sidebar>
     
