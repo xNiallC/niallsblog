@@ -1,0 +1,19 @@
+{
+  "name": "niallsblog",
+  "version": "1.0.0",
+  "description": "My Blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "python ./devserver.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xNiallC/niallsblog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xNiallC/niallsblog/issues"
+  },
+  "homepage": "https://github.com/xNiallC/niallsblog#readme"
+}
