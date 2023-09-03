@@ -6,7 +6,7 @@
   "scripts": {
     "start": "python ./devserver.py",
     "gen:content": "pelican content",
-    "publish": "make s3_upload"
+    "publish:content": "make s3_upload"
   },
   "repository": {
     "type": "git",
